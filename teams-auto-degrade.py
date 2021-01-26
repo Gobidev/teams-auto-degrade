@@ -1,6 +1,7 @@
 from pyautogui import position, rightClick, moveTo, leftClick
 from time import sleep
 from keyboard import is_pressed
+from sys import exit as terminate
 
 
 # position for teams in full screen on 1080p
@@ -35,7 +36,7 @@ def check_hotkey():
             degrade()
         elif is_pressed("F7"):
             print("Exiting..")
-            exit()
+            terminate(0)
         sleep(0.01)
 
 
